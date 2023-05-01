@@ -1,0 +1,3 @@
+- `pip install natsort` [natsort 8.3.1](https://pypi.org/project/natsort/)
+    - following pandas Documentation example for [pandas.DataFrame.sort_values](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html)
+        - `from natsort import index_natsorted`
