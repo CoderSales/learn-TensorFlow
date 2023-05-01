@@ -6,3 +6,7 @@ source script3.sh
 go to:
 - README.md:
     - setup step 4.
+
+
+#### Install Dependencies:
+pip install -r requirements.txt
