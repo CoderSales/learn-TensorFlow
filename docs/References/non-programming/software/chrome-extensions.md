@@ -1,1 +1,0 @@
-- [Cite This For Me Feature Spotlight: Chrome Extension](https://www.citethisforme.com/blog/2017/10/20/cite-feature-spotlight-chrome-extension)
