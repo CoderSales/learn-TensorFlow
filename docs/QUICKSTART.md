@@ -47,3 +47,5 @@ choose (venv) type environment
 
 to:
 We have selected the following environment... .venv
+
+#### Continue Running notebook
