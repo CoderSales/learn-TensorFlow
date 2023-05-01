@@ -1,3 +1,0 @@
-Ju, Q., Li, X., Zhang, H. and Zhao, Y.
-Ju, Q. et al. (2020) "BRCA1-Associated Protein Is a Potential Prognostic Biomarker and Is Correlated With Immune Infiltration in Liver Hepatocellular Carcinoma: A Pan-Cancer Analysis", Frontiers in Molecular Biosciences, 7. doi: 10.3389/fmolb.2020.573619.
-- Abbreviations [BRCA1-Associated Protein Is a Potential Prognostic Biomarker and Is Correlated With Immune Infiltration in Liver Hepatocellular Carcinoma: A Pan-Cancer Analysis | Sample Information and BRAP Expression Analysis in Human Pan-Cancer](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7667264/)
