@@ -20,3 +20,4 @@ python -m pip install -U matplotlib
 - `pip install nb-black` [nb-black 1.0.7](https://pypi.org/project/nb-black/)nb-black 1.0.7nb-black 1.0.7
 - `pip install xlwings` | `xlwings addin install` [xlwings Python package](https://docs.xlwings.org/en/stable/installation.html)
 - `pip install natsort` [natsort 8.3.1](https://pypi.org/project/natsort/)
+- `pip install imageio` [imageio 2.28.1](https://pypi.org/project/imageio/)
