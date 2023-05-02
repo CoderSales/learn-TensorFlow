@@ -24,6 +24,7 @@
 17. pip install xlwings
 18. xlwings addin install
 19. pip install natsort
+20. pip install imageio
 
 ### Save setup
 
