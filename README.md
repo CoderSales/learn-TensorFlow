@@ -34,22 +34,6 @@
 1. notebooks/K-Means.ipynb
 2. data/technical_support_data-2.csv
 
-### Tarball Data Extraction:
-1. python tarball-handler.py
-
-    #### Add to gitignore:
-    ##### 1. custom components
-    ##### 1.1 large files
-    ##### 1.1.1 tarball
-    TCGA-PANCAN-HiSeq-801x20531.tar.gz
-
-    ##### 1.1.2 large data from tarball
-    data/gene_data/TCGA-PANCAN-HiSeq-801x20531/TCGA-PANCAN-HiSeq-801x20531/data.csv
-    data/gene_data/TCGA-PANCAN-HiSeq-801x20531/TCGA-PANCAN-HiSeq-801x20531/labels.csv
-
-### Note on data files and Large Data sets on GitHub:
-Add data in own commit
-in case of 50 MB GitHub warning
 
 ### update to .gitignore:
 ```
