@@ -5,5 +5,5 @@
     - `from natsort import index_natsorted`
 
 - `pip install imageio` [imageio 2.28.1](https://pypi.org/project/imageio/)
-  - following TensorFlow 2 Documentation [pandas.DataFrame.plot](https://www.tensorflow.org/tutorials/load_data/video)
+  - following TensorFlow 2 Documentation [import imageio](https://www.tensorflow.org/tutorials/load_data/video)
     - `import imageio`
