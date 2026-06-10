@@ -73,8 +73,8 @@ nbclassic==0.5.5
 nbclient==0.7.3
 nbconvert==7.17.1
 nbformat==5.8.0
+notebook==7.5.7
 nest-asyncio==1.6.0
-notebook==6.5.4
 notebook_shim==0.2.2
 numpy==2.4.6
 oauthlib==3.2.2
