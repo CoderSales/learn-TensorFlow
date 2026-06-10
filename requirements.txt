@@ -34,8 +34,8 @@ google-auth-oauthlib==1.4.0
 google-pasta==0.2.0
 grpcio==1.81.0
 h5py==3.8.0
+importlib-metadata==9.0.0
 idna==3.18
-importlib-metadata==6.3.0
 importlib-resources==5.12.0
 ipykernel==6.22.0
 ipython==8.12.0
