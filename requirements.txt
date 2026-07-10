@@ -119,7 +119,7 @@ seaborn==0.12.2
 Send2Trash==1.8.0
 six==1.17.0
 sniffio==1.3.0
-soupsieve==2.4
+soupsieve==2.8.4
 stack-data==0.6.2
 tensorboard==2.12.2
 tensorboard-data-server==0.7.0
