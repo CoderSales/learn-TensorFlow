@@ -145,7 +145,7 @@ webencodings==0.5.1
 websocket-client==1.9.0
 Werkzeug==3.1.6
 widgetsnbextension==4.0.7
-wrapt==1.14.1
+wrapt==2.2.2
 xlwings==0.30.4
 yellowbrick==1.5
 zipp==4.1.0
