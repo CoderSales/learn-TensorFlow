@@ -107,7 +107,7 @@ pywinpty==3.0.5
 PyYAML==6.0.3
 pyzmq==25.0.2
 qtconsole==5.4.2
-QtPy==2.3.1
+QtPy==2.4.3
 requests-oauthlib==2.0.0
 requests==2.34.2
 rfc3339-validator==0.1.4
