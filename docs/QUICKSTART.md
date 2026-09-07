@@ -1,57 +1,112 @@
-# QUICKSTART.md
+# Mac setup
 
-git clone ```[paste from: GitHub.com/Repo you want to work on > Code > Local > Clone > HTTPS > Copy]```
-python -m venv .venv
-source script3.sh
+Run these commands from the `learn-TensorFlow` folder in Terminal.
 
-## Before clicking `Run All`
+## Leave another environment first
 
-go to:
-
-- README.md:
-  - setup step 4.
-
-## Install Dependencies
-
-`pip install -r requirements.txt`
-
-## TensorFlow
+If a Python virtual environment is active, run `deactivate` first.
+If Conda is active, for example the prompt shows `(base)`, then run:
 
 ```bash
-pip install --upgrade pip
-
-pip install tensorflow
+conda deactivate
 ```
 
-[Install TensorFlow 2](https://www.tensorflow.org/install)
+Skip commands for environments that are not active. If Conda environments were
+stacked, repeat `conda deactivate` until none is active. This changes the current
+terminal session; it does not uninstall Anaconda or its packages.
 
-### Notes on Installation
+## Use this repository's working TensorFlow environment
+
+`.venv-tf` uses Python 3.12. The separate `.venv` on this Mac uses Python 3.14.
+Use `.venv-tf` for the beginner TensorFlow notebook.
+
+The environment already exists on this Mac. If setting it up from scratch,
+create it once with the available `uv` tool:
 
 ```bash
-     -------- ------------------------------- 57.0/272.8 MB 7.8 MB/s eta 0:00:28
+uv venv --python 3.12 --seed .venv-tf
 ```
+
+Activate it in the current terminal:
 
 ```bash
-  Attempting uninstall: numpy
-    Found existing installation: numpy 1.24.2
-    Uninstalling numpy-1.24.2:
-      Successfully uninstalled numpy-1.24.2
-Successfully installed absl-py-1.4.0 astunparse-1.6.3 cachetools-5.3.0 certifi-2022.12.7 charset-normalizer-3.1.0 flatbuffers-23.3.3 gast-0.4.0 google-auth-2.17.3 google-auth-oauthlib-1.0.0 google-pasta-0.2.0 grpcio-1.54.0 h5py-3.8.0 jax-0.4.8 keras-2.12.0 libclang-16.0.0 markdown-3.4.3 ml-dtypes-0.1.0 numpy-1.23.5
+source .venv-tf/bin/activate
 ```
 
-## freeze requirements.txt | install requirements.txt
+Alternatively, `source ./script3mac.sh` activates the same environment. Use
+`source`, because `bash script3mac.sh` cannot activate the parent terminal.
 
-`pip freeze > requirements.txt`
+Check the selected Python, upgrade pip, and install the saved package versions:
 
-`pip install -r requirements.txt`
+```bash
+python --version
+python -c 'import sys; print(sys.executable)'
+python -m pip install --upgrade pip
+python -m pip install -r requirements-mac.txt
+python -m pip check
+```
 
-## open requirements.txt | Click `Create environment` button that appears after installing TensorFlow
+Expect Python 3.12 and a path ending in `learn-TensorFlow/.venv-tf/bin/python`.
+`python -m pip` uses that selected Python environment for installation.
 
-click through
+`requirements-mac.txt` records the environment verified with `beginner.ipynb`.
+It does not establish that the advanced, classification, and CSV notebooks have
+all been updated or tested. The original `requirements.txt` remains an older
+snapshot containing Windows-specific packages and the obsolete formatter.
 
-choose (venv) type environment
+Open the beginner notebook:
 
-to:
-We have selected the following environment... .venv
+```bash
+bash run-beginner-mac.sh
+```
 
-## Continue Running notebook
+This launcher uses `.venv-tf` directly, so activation is not required just to
+launch it. In Jupyter, choose **Python 3.12 (TensorFlow)** if it is listed. On a
+fresh setup, **Python 3 (ipykernel)** supplied by this environment is also valid.
+
+## Save an updated package snapshot
+
+After intentionally changing packages and checking the notebook still runs,
+save the active TensorFlow environment:
+
+```bash
+python -m pip freeze > requirements-mac.txt
+```
+
+`freeze` writes the installed package versions; it does not install anything.
+The `>` replaces the destination file, so review the Git diff afterwards. You
+do not need to freeze again after every successful install from that file.
+
+When finished, leave the active virtual environment with `deactivate`.
+
+## General `.venv` workflow for another project
+
+Use a Python version supported by that project. `python3 -m venv` uses whichever
+Python `python3` currently resolves to. For this TensorFlow repository, use the
+Python 3.12 instructions above instead of the default Python 3.14 on this Mac.
+
+After leaving other active environments and entering the other project's folder:
+
+```bash
+python3 --version
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+python -m pip check
+```
+
+Create `.venv` only once; on later visits, start at the activation command. The
+project must already supply a suitable `requirements.txt` for the install step.
+
+After intentional dependency changes and a successful project check:
+
+```bash
+python -m pip freeze > requirements.txt
+```
+
+The filename is `requirements.txt`. This command overwrites it with a snapshot
+of the currently active environment.
+
+References: [Conda environment management](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html),
+[pip freeze](https://pip.pypa.io/en/stable/cli/pip_freeze/).

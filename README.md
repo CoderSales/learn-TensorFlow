@@ -1,8 +1,17 @@
-# unsupervised-learning-clustering
+# learn-TensorFlow
 
 ## Key elements in this repository
 
-### Setup
+### Mac setup
+
+[Commands only](tldrquickerstart.md).
+
+Follow [the Mac quickstart](docs/QUICKSTART.md) for Conda deactivation, Python 3.12,
+`.venv-tf`, installing `requirements-mac.txt`, and saving package versions.
+
+Open the beginner notebook with `bash run-beginner-mac.sh`.
+
+### Previous setup notes
 
 1. References
 2. `script3.sh` - activates virtual environment (or `source scripy3.sh`)
@@ -20,21 +29,20 @@
 13. pip install seaborn
 14. pip install -U scikit-learn
 15. pip install openpyxl
-16. pip install nb-black
 17. pip install xlwings
 18. xlwings addin install
 19. pip install natsort
 20. pip install imageio
 
-### Save setup
+#### Save setup
 
 1. pip freeze > requirements.txt
 
-### Load setup
+#### Load setup
 
 1. pip install -r requirements.txt
 
-### Analysis
+#### Analysis
 
 1. notebooks/K-Means.ipynb
 2. data/technical_support_data-2.csv
