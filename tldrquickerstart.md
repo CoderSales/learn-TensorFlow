@@ -7,10 +7,12 @@ if [ -n "${VIRTUAL_ENV:-}" ]; then deactivate; fi
 while [ "${CONDA_SHLVL:-0}" -gt 0 ]; do conda deactivate || break; done
 ```
 
-## Create once
+## Create if missing
 
 ```bash
-uv venv --python 3.12 --seed .venv-tf
+if [ ! -d .venv-tf ]; then
+    uv venv --python 3.12 --seed .venv-tf
+fi
 ```
 
 ## Activate

@@ -20,12 +20,17 @@ terminal session; it does not uninstall Anaconda or its packages.
 `.venv-tf` uses Python 3.12. The separate `.venv` on this Mac uses Python 3.14.
 Use `.venv-tf` for the beginner TensorFlow notebook.
 
-The environment already exists on this Mac. If setting it up from scratch,
-create it once with the available `uv` tool:
+Create the environment only if its folder is missing. This command skips
+creation when `.venv-tf` already exists, so you can use it on later visits too:
 
 ```bash
-uv venv --python 3.12 --seed .venv-tf
+if [ ! -d .venv-tf ]; then
+    uv venv --python 3.12 --seed .venv-tf
+fi
 ```
+
+If an earlier command asks to replace the environment, choose **no**. The
+"already exists" error then means it was kept; continue with activation.
 
 Activate it in the current terminal:
 
