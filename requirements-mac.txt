@@ -103,7 +103,7 @@ tensorflow==2.21.0
 termcolor==3.3.0
 terminado==0.18.1
 tinycss2==1.5.1
-tornado==6.5.8
+tornado==6.5.9
 traitlets==5.16.1
 typing_extensions==4.16.0
 tzdata==2026.3
