@@ -101,7 +101,7 @@ pyparsing==3.3.2
 pyrsistent==0.19.3
 python-dateutil==2.9.0.post0
 python-json-logger==4.1.0
-pytz==2023.3
+pytz==2026.3.post1
 pywin32==306
 pywinpty==3.0.5
 PyYAML==6.0.3
